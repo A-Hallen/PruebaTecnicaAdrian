@@ -70,7 +70,7 @@ class TechnicalTest {
     }
 
     private fun obtenerEdad(date: Date): Int{
-        return Date().year - date.year
+        return LocalDate.now().year - date.year
     }
 
     private fun isManOrNot(id: Long): Boolean {
