@@ -1,6 +1,5 @@
 
 import org.junit.Test
-
 import java.util.Date
 
 data class Person(
@@ -71,7 +70,7 @@ class TechnicalTest {
     }
 
     private fun obtenerEdad(date: Date): Int{
-        return date.year
+        return Date().year - date.year
     }
 
     private fun isManOrNot(id: Long): Boolean {
